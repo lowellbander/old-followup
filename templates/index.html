@@ -2,14 +2,15 @@
 <html>
         <head>
         </head>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
         <body>
             <div>
                 <h1>UCLA HSSEAS Tour Follow-Up</h1>
@@ -22,49 +23,31 @@
     <div class="row">
         <form role="form">
             <div class="col-lg-6">
-                <!--
-                <div class="form-group">
-                    <label for="InputName">Enter Name</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="InputEmail">Enter Email</label>
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="InputEmailFirst" name="InputEmail" placeholder="Enter Email" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="InputEmail">Confirm Email</label>
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="InputEmailSecond" name="InputEmail" placeholder="Confirm Email" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                -->
                 <div class="form-group">
                     <label for="InputMessage">How awesome was your tour guide?</label>
                     <div class="input-group">
-                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                        <textarea name="first" id="InputMessage" class="form-control" rows="5" ></textarea>
+                        <span class="input-group-addon"></span>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="InputMessage">Was there anything you would have liked to have heard about, but didn't?</label>
+                    <div class="input-group">
+                        <textarea name="second" id="InputMessage" class="form-control" rows="5" ></textarea>
+                        <span class="input-group-addon"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputMessage">Or perhaps heard about, but could have done without?</label>
+                    <div class="input-group">
+                        <textarea name="third" id="InputMessage" class="form-control" rows="5" ></textarea>
+                        <span class="input-group-addon"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
             </div>
         </form>
-        <div class="col-lg-5 col-md-push-1">
-            <div class="col-md-12">
-                <div class="alert alert-success">
-                    <strong><span class="glyphicon glyphicon-ok"></span> Success! Message sent.</strong>
-                </div>
-                <div class="alert alert-danger">
-                    <span class="glyphicon glyphicon-remove"></span><strong> Error! Please check all page inputs.</strong>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
         </body>

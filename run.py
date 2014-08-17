@@ -12,8 +12,10 @@ def get(famID):
     except TypeError:
         return None
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def index():
+    if request.method == 'POST':
+        return "Submitted!"
     try:
         data = {'id': request.args.get('id')}
         data['name'] = get(data['id'])['name']
