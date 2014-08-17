@@ -12,12 +12,12 @@ def get(famID):
     except TypeError:
         return None
 
-@app.route('/', methods=['GET','POST'])
-def index():
+@app.route('/<fid>', methods=['GET','POST'])
+def index(fid):
     if request.method == 'POST':
         return "Submitted!"
     try:
-        data = {'id': request.args.get('id')}
+        data = {'id': fid}
         data['name'] = get(data['id'])['name']
         return render_template('index.html', data=data)
     except TypeError:
