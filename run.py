@@ -14,6 +14,9 @@ def get(famID):
 
 @app.route('/<fid>', methods=['GET','POST'])
 def index(fid):
+
+    print "THIS IS A TEST"
+
     #process submission
     first = request.args.get('first')
     second = request.args.get('second')
