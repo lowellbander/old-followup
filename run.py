@@ -41,9 +41,9 @@ def index(fid):
     try:
         data = {'id': fid}
         data['name'] = get(data['id'])['name']
-        return render_template('index.html', data=data)
+        return render_template('followup.html', data=data)
     except TypeError:
-        return "Error. Probably no ID in URL."
+        return render_template('index.html', data=data)
 
 if __name__ == '__main__':
     app.run()
